@@ -1,0 +1,272 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+button {
+    cursor: pointer;
+    background-color: #cf7500;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* Navigation Bar */
+#navbar {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f0a500;
+}
+
+#navbar-logo {
+    color: white;
+    text-align: left;
+    font-size: 2.5rem;
+    align-self: center;
+    margin-left: 20px;
+}
+
+#navbar-menu {
+    color: white;
+    list-style: none;
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.navbar-menu-item {
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: center;
+}
+
+#navbar-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 0) {
+    
+}
+
+@media screen and (min-width: 641px) {
+    
+}
+
+@media screen and (min-width: 1007px) {
+    
+}
+
+
+/* Home or Main Intro Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 600px;
+    color: #1a1c20;
+    padding: 0 30px 0 30px;
+}
+
+#home h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+#home h2 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 2rem;
+}
+
+
+/* About Section */
+#about {
+    display: grid;
+    text-align: center;
+    height: 600px;
+}
+#about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #1a1c20;
+    padding: 0 30px 0 30px;
+}
+
+@media screen and (min-width: 0) {
+    #about {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    #about {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Services Section */
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#services h1 {
+    margin-bottom: 40px;
+}
+
+#services-items {
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 0) {
+    #services-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .services-item {
+        margin: 20px 20% 20px 20%;
+        padding: 30px;
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    #services-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .services-item {
+        height: 400px;
+        margin: 10px 15px 10px 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1007px) {
+    #services {
+        height: 600px;
+    }
+    #services-items {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .services-item {
+        height: 400px;
+        margin: 10px 15px 10px 15px;
+        padding: 30px;
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 30px 0 30px;
+}
+
+@media screen and (min-width: 0) {
+    
+}
+
+@media screen and (min-width: 641px) {
+    
+}
+
+@media screen and (min-width: 1007px) {
+    
+}
+
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    height: 400px;
+    background-color: #f0a500;
+}
+
+#footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#footer-logo {
+    align-self: center;
+    text-align: center;
+}
+
+#footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#footer-social a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 0) {
+    
+}
+
+@media screen and (min-width: 641px) {
+    
+}
+
+@media screen and (min-width: 1007px) {
+    
+}
