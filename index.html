@@ -7,69 +7,81 @@
         <!-- Navigation bar -->
         <div id="navbar">
             <div id="navbar-logo">U&U</div>
+            <div id="navbar-bars" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             <ul id="navbar-menu">
-                <li class="navbar-menu-item"><a href="#home">Home</a></li>
-                <li class="navbar-menu-item"><a href="#about">About</a></li>
-                <li class="navbar-menu-item"><a href="#services">Services</a></li>
-                <li class="navbar-menu-item"><a href="#contact">Contact</a></li>
-                <li class="navbar-menu-item"><button>Sign Up</button></li>
             </ul>
         </div>
 
         <!-- Home Section - Main Intro Section -->
-        <div id="home">
+        <div class="section" id="home">
             <h1>Upscale and Unique</h1>
             <h2>We help you make your days special</h2>
             <p>With our services you can turn your ordinary days into memories</p>
         </div>
 
+
+        <hr>
+
+
         <!-- About Section -->
-        <div id="about">
-            <div id="about-icon"></div>
+        <div class="section" id="about">
+            <div id="about-icon"><img src="images/handshake.png" alt="Handshake Icon" id="icon"></div>
             <div id="about-content">
                 <h1>How can we help?</h1>
                 <h2>We determine what you need to grow</h2>
-                <button>Learn more today!</button>
+                <button><a>Learn more today!</a></button>
             </div>
         </div>
 
+
+        <hr>
+
+
         <!-- Services Section -->
-        <div id="services">
+        <div class="section" id="services">
             <h1>What we offer:</h1>
             <div id="services-items">
                 <div class="services-item">
                     <h1>New and Improved Deals</h1>
                     <h2>Make today even more special</h2>
-                    <button>Learn more</button>
+                    <button><a>Learn more</a></button>
                 </div>
                 <div class="services-item">
                     <h1>Special Needs</h1>
                     <h2>We know that everyone is not the same</h2>
-                    <button>Discover Yourself</button>
+                    <button><a>Discover Yourself</a></button>
                 </div>
                 <div class="services-item">
                     <h1>Our Team</h1>
                     <h2>A special member to resolve any of your issues</h2>
-                    <button>Hire</button>
+                    <button><a>Hire</a></button>
                 </div>
                 <div class="services-item">
                     <h1>Keep things Fresh</h1>
                     <h2>We always find something new to make it special</h2>
-                    <button>Set a Date</button>
+                    <button><a>Set a Date</a></button>
                 </div>
             </div>
         </div>
 
+
+        <hr>
+
+
         <!-- Contact Section -->
-        <form id="contact">
+        <form class="section" id="contact">
 
-            <h1>Subscribe to Get notified about new posts:</h1>
+            <h1>Ask us anything:</h1>
 
-            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Your Name">
             <input type="text" placeholder="E-mail">
-            <input type="text" placeholder="Your Question">
+            <input id="question" type="text" placeholder="Your Question">
 
-            <button>Send</button>
+            <button><a>Send</a></button>
 
         </form>
 
@@ -80,7 +92,7 @@
                 <li class="footer-nav-item"><a href="#about">About</a></li>
                 <li class="footer-nav-item"><a href="#services">Services</a></li>
                 <li class="footer-nav-item"><a href="#contact">Contact</a></li>
-                <li class="footer-nav-item"><button>Sign Up</button></li>
+                <li class="footer-nav-item"><button><a>Sign Up</a></button></li>
             </ul>
 
             <div id="footer-logo">U&U</div>
@@ -92,5 +104,7 @@
                 <li><a href="">LinkedIn</a></li>
             </ul>
         </footer>
+
+        <script src="js/app.js"></script>
     </body>
 </html>
