@@ -53,6 +53,7 @@ button:hover:after {
 /* Navigation Bar */
 #navbar {
     height: 80px;
+    width: 100%;
     background-color: black;
     z-index: 999;
     display: flex;
@@ -169,7 +170,7 @@ button:hover:after {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    height: 600px;
+    height: 60vh;
     color: #1a1c20;
     padding: 0 30px 0 30px;
 }
@@ -187,12 +188,25 @@ button:hover:after {
     font-size: 2rem;
 }
 
+@media screen and (min-width: 0) {
+    #home h1 {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    
+}
+
+@media screen and (min-width: 1007px) {
+    
+}
+
 
 /* About Section */
 #about {
-    display: grid;
     text-align: center;
-    height: 600px;
+    height: 60vh;
 }
 #about-content {
     display: flex;
@@ -210,10 +224,10 @@ button:hover:after {
     justify-content: center;
 }
 
-@media screen and (min-width: 0) {
+@media screen and (max-width: 850px) {
     #about {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     #icon {
@@ -223,15 +237,16 @@ button:hover:after {
     }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 851px) {
     #about {
+        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
     #icon {
         height: 400px;
         width: 400px;
-        margin: 0;
+        margin-left: 20px;
     }
 }
 

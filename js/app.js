@@ -16,6 +16,6 @@ console.log(sections);
 
 for (x=0; x<sections.length; x++) {
     sectionName = sections[x].id;
-    menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" href="#home">' + sectionName + '</a></li>';
+    let capitalSectionName = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
+    menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" href="#home">' + capitalSectionName + '</a></li>';
 };
-console.log(menu);
