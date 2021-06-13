@@ -17,7 +17,7 @@ console.log(sections);
 for (x=0; x<sections.length; x++) {
     sectionName = sections[x].id;
     let capitalSectionName = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
-    menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" href="#' + sectionName + '">' + capitalSectionName + '</a></li>';
+    menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" id="' + sectionName + '-in-menu" href="#' + sectionName + '">' + capitalSectionName + '</a></li>';
 };
 
 function checkIfSectionInView() {
@@ -34,15 +34,15 @@ function checkIfSectionInView() {
   
     for (x = 0; x < sections.length; x++) {
       let sectionInFullView = document.getElementById(sections[x].id);
-        
+      let activeMenu = document.getElementById(sectionInFullView + "-in-menu");
   
       window.addEventListener(
         "scroll",
         function(event) {
           if (isInViewport(sectionInFullView)) {
-            sectionInFullView.classList.add("highlight");
+            activeMenu.classList.add("highlight");
           } else {
-            sectionInFullView.classList.remove("highlight");
+            activeMenu.classList.remove("highlight");
           }
         },
         false
