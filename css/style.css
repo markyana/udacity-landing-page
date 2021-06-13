@@ -132,6 +132,7 @@ button:hover:after {
 
 .highlight {
     border-bottom: 4px solid black;
+    color: brown;
 }
 
 @media screen and (max-width: 1007px) {

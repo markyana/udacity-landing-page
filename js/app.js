@@ -11,6 +11,10 @@ const mobileMenu = () => {
 
 bars.addEventListener('click', mobileMenu);
 
+menu.addEventListener('click', function() {
+    menu.classList.remove('active');
+});
+
 const sections = document.querySelectorAll('.section');
 console.log(sections);
 
@@ -24,18 +28,14 @@ function checkIfSectionInView() {
     let isInViewport = function(elem) {
       let bounding = elem.getBoundingClientRect();
       return (
-        bounding.top <= 50 &&
-        bounding.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <=
-          (window.innerWidth || document.documentElement.clientWidth)
+          bounding.top <= 100 && bounding.bottom >= 50
       );
     };
-  
+
     for (x = 0; x < sections.length; x++) {
       let sectionInFullView = document.getElementById(sections[x].id);
-      let activeMenu = document.getElementById(sectionInFullView + "-in-menu");
-  
+      let activeMenu = document.getElementById(sections[x].id + "-in-menu");
+
       window.addEventListener(
         "scroll",
         function(event) {
@@ -48,5 +48,6 @@ function checkIfSectionInView() {
         false
       );
     };
-  };
 };
+
+checkIfSectionInView();
