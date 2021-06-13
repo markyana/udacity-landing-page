@@ -17,5 +17,36 @@ console.log(sections);
 for (x=0; x<sections.length; x++) {
     sectionName = sections[x].id;
     let capitalSectionName = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
-    menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" href="#home">' + capitalSectionName + '</a></li>';
+    menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" href="#' + sectionName + '">' + capitalSectionName + '</a></li>';
+};
+
+function checkIfSectionInView() {
+    let isInViewport = function(elem) {
+      let bounding = elem.getBoundingClientRect();
+      return (
+        bounding.top <= 50 &&
+        bounding.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+  
+    for (x = 0; x < sections.length; x++) {
+      let sectionInFullView = document.getElementById(sections[x].id);
+        
+  
+      window.addEventListener(
+        "scroll",
+        function(event) {
+          if (isInViewport(sectionInFullView)) {
+            sectionInFullView.classList.add("highlight");
+          } else {
+            sectionInFullView.classList.remove("highlight");
+          }
+        },
+        false
+      );
+    };
+  };
 };
