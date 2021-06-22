@@ -233,11 +233,11 @@ button:hover:after {
 
 @media screen and (min-width: 641px) {
     #home h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #home h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #home p {
@@ -247,11 +247,11 @@ button:hover:after {
 
 @media screen and (min-width: 1007px) {
     #home h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     #home h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #home p {
@@ -339,7 +339,7 @@ button:hover:after {
     }
 
     #about-content h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #about-content h2 {

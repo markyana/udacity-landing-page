@@ -15,8 +15,8 @@ menu.addEventListener('click', function() {
     menu.classList.remove('active');
 });
 
+// Prints the navigation menu
 const sections = document.querySelectorAll('.section');
-console.log(sections);
 
 for (x=0; x<sections.length; x++) {
     sectionName = sections[x].id;
@@ -24,6 +24,7 @@ for (x=0; x<sections.length; x++) {
     menu.innerHTML += '<li class="navbar-menu-item"><a class="navbar-menu-link" id="' + sectionName + '-in-menu" href="#' + sectionName + '">' + capitalSectionName + '</a></li>';
 };
 
+// Checks if function is in view and highlights the appropriate navigation bar link
 function checkIfSectionInView() {
     let isInViewport = function(elem) {
       let bounding = elem.getBoundingClientRect();
